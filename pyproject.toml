@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fde-incident-response"
+version = "0.1.0"
+description = "Structured logging, tracing primitives, incident management and post-mortem generation for SaaS operations teams."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["fde_incident_response*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
